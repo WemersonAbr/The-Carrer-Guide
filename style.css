@@ -1,0 +1,162 @@
+/* Estilos principal do site */
+* 
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #000;
+    color: #ccc;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+  }
+
+  main {
+    flex: 1;
+  }
+  
+  header {
+    background-color: #111;
+    padding: 1rem 2rem;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .logo img {
+    height: 50px;
+  }
+  
+  nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ccc;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  nav a:hover {
+    color: #fff;
+  }
+  
+  section {
+    padding: 100px 20px;
+    min-height: 100vh;
+  }
+  
+  #home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #home img {
+    max-width: 600px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  h2 {
+    margin-bottom: 1rem;
+  }
+
+  #profissoes {
+    padding-top: 140px;
+  }
+
+  #profissoes h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 0;  
+  }
+  
+  .profissoes-lista {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .profissoes-lista li {
+    background-color: #111;
+    padding: 20px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+    text-align: center;
+    color: #fff;
+    font-size: 1.1rem;
+    min-width: 200px;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+
+  .profissoes-lista li:hover {
+    transform: translateY(-5px);
+    background-color: #222;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 20px;
+    background: #111;
+    color: #777;
+  }
+
+  #sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 120px;
+  }
+
+  #sobre .conteudo-sobre {
+    max-width: 800px;
+    background-color: #111;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+    text-align: center;
+    color: #ccc;
+  }
+
+  #sobre h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  #sobre p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+
+  .botao-contato i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    vertical-align: middle;
+  }
